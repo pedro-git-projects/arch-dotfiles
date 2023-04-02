@@ -1,0 +1,55 @@
+# Directory structure 
+xdg-user-dirs
+
+# DWM
+libxft
+libxinerama
+xterm
+
+# Archlinux logout
+python-gobject 
+gtk3 
+libwnck3
+
+# Misc
+unclutter
+lxappearance
+cbaticon
+feh
+picom 
+polkit-gnome
+network-manager-applet
+
+# SDDM 
+qt5-graphicaleffects
+qt5-quickcontrols
+qt5-quickcontrols2
+
+# ranger 
+ueberzug
+bat
+sxiv
+ffmpegthumnailer
+jq
+mediainfo
+odt2txt
+python-pdftotext
+
+# Fixing reparenting on Java based apps
+wmname
+
+# Readers
+zathura
+zathura-cb
+zathura-djvu
+zathura-pdf-poppler
+
+# Player
+mpv
+
+# Themes
+gruvbox-material-gtk-theme-git 
+gruvbox-material-icon-theme-git 
+
+# Audio
+volctl

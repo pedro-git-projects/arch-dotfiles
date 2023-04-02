@@ -1,0 +1,3 @@
+oh-my-zsh-git
+zsh
+zsh-syntax-highlighting
