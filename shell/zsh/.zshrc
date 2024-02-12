@@ -11,7 +11,9 @@
 
 export ZSH=/usr/share/oh-my-zsh/
 
-ZSH_THEME="lambda"
+# ZSH_THEME="dogenpunk"
+ ZSH_THEME="afowler"
+# ZSH_THEME="lambda"
 # ZSH_THEME="half-life"
 # ZSH_THEME="norm"
 
@@ -182,28 +184,27 @@ ex ()
 #alias marcusScript="/home/pedro/Documents/dev/scripts/marcusScript/marcus.sh"
 #marcusScript
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-#__conda_setup="$('/home/pedro/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-#if [ $? -eq 0 ]; then
-#    eval "$__conda_setup"
-#else
-#    if [ -f "/home/pedro/anaconda3/etc/profile.d/conda.sh" ]; then
-#        . "/home/pedro/anaconda3/etc/profile.d/conda.sh"
-#    else
-#        export PATH="/home/pedro/anaconda3/bin:$PATH"
-#    fi
-#fi
-#unset __conda_setup
-# <<< conda initialize <<<
+ # >>> conda initialize >>>
+ # !! Contents within this block are managed by 'conda init' !!
+# __conda_setup="$('/home/pedro/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+ #    eval "$__conda_setup"
+# else
+ #    if [ -f "/home/pedro/anaconda3/etc/profile.d/conda.sh" ]; then
+ #        . "/home/pedro/anaconda3/etc/profile.d/conda.sh"
+ #    else
+ #        export PATH="/home/pedro/anaconda3/bin:$PATH"
+ #    fi
+# fi
+# unset __conda_setup
+ # <<< conda initialize <<<
 
 # cd alias
 alias data="cd /mnt/Data"
-alias ntt="cd /mnt/Data/desafio-trilha-backend-everis"
 alias notes="cd /home/pedro/Documents/notes"
 alias vid="/home/pedro/Videos"
 alias yt="yt-dlp -f mp4" # Update using python3 -m pip install -U yt-dlp
-alias yt-mp3 "yt-dlp -x --audio-format mp3" # python3 -m pip install -U yt-dlp
+alias yt-mp3="yt-dlp -x --audio-format mp3" # python3 -m pip install -U yt-dlp
 alias back="/mnt/Data/trilha_backend_desafios"
 alias rfm="ranger"
 alias teste="/mnt/Data/tests"
@@ -228,12 +229,20 @@ alias ads="/home/pedro/Documents/ads"
 alias chromecss="/home/pedro/.librewolf/8bop33mn.default-release/chrome/"
 alias emacs="emacs -nw"
 alias akira="~/Downloads/src/Akira/build/src/com.github.akiraux.akira"
+
 # open a new instance of st in the same location
 alias nst="st >/dev/null 2>&1 & disown"
+
+# open a new instance of alacritty in the same location
+alias nala="alacritty >/dev/null 2>&1 & disown"
+
 # opens thunar and disowns it
 alias thunar="thunar & disown"
 
 # npm 
+# this creates and exports a directory for globally installed packages
+# if it is the first time use, also run
+# npm config set prefix './.npm-packages'
 export PATH="$PATH:$HOME/.npm-packages/bin"
 
 # Preserve MANPATH if you already defined it somewhere in your config.
@@ -251,6 +260,9 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # Go
 export PATH="$HOME/go/bin:$PATH"
+
+# Flutter
+export PATH=~/Downloads/src/flutter/bin/:$PATH
 
 # Node
 #export PATH="$HOME/.npm-packages/bin"
@@ -283,3 +295,30 @@ export NVM_DIR="$HOME/.nvm"
 
 # alacritty
 # WINIT_X11_SCALE_FACTOR=1.66
+
+alias mp4-to-mp3="~/dev/go/mp4-to-mp3/mp4-to-mp3"
+
+
+[ -f "/home/pedro/.ghcup/env" ] && source "/home/pedro/.ghcup/env" # ghcup-env
+
+# opam configuration
+[[ ! -r /home/pedro/.opam/opam-init/init.zsh ]] || source /home/pedro/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+# Android  
+export ANDROID_HOME=/home/pedro/.Android/sdk/
+# export ANDROID_HOME=/opt/android-sdk/
+# export PATH=$PATH:$ANDROID_HOME/tools
+# export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# bun completions
+[ -s "/home/pedro/.bun/_bun" ] && source "/home/pedro/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# flutter
+export PATH="$PATH:$HOME/Downloads/src/flutter/bin/"
+
+# qt theme
+export QT_QPA_PLATFORMTHEME=qt6ct
