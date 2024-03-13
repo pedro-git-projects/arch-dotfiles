@@ -202,7 +202,7 @@ static const char *voldowncmd[] = {
 
 // change keyboard layout on the fly using dmenu
 static const char *kbdlayout[] = {
-    "/home/pedro/.scripts/keybaord_layout.sh",
+    "/home/pedro/.scripts/kbd.sh",
     NULL,
 };
 
