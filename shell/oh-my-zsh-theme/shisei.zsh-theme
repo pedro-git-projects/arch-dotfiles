@@ -3,7 +3,7 @@ local return_status="%{$fg[red]%}%(?..⏎)%{$reset_color%} "
 
 ZSH_THEME_GIT_PROMPT_PREFIX="|"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY="|%{$fg[red]%}ダメ%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY="|%{$fg[red]%}未定%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_AHEAD="|%{$fg_bold[red]%}やばい%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="|%{$fg[green]%}オーケー%{$reset_color%}"
 
