@@ -1,6 +1,6 @@
 # Dependencies
 
-- ueberzug 
+- ueberzugpp 
 - bat
 - feh
 - sxiv
